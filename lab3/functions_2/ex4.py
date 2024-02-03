@@ -1,10 +1,11 @@
 # Dictionary of movies
 def films(movies):
-    f=[]
+    count_movie=0
+    score=0
     for movie in movies:
-        if movie["imdb"]>5.5:
-            f.append(movie["name"])
-    return f
+        count_movie+=1
+        score+=movie["imdb"]
+    return score/count_movie
 movies = [
 {
 "name": "Usual Suspects", 
