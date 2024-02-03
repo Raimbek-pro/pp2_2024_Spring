@@ -1,8 +1,8 @@
 # Dictionary of movies
-def films(movies):
+def action(movies):
     f=[]
     for movie in movies:
-        if movie["imdb"]>5.5:
+        if movie["category"] == "Suspense":
             f.append(movie["name"])
     return f
 movies = [
@@ -83,4 +83,4 @@ movies = [
 }
 ]
  
-print(films(movies))
+print(action(movies))
